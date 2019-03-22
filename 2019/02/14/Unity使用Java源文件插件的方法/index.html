@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Unity,Java,插件,">
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="youlingke的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Unity使用Java源文件插件的方法和注意事项##阅读目录  一、介绍 二、创建java代码 三、在Unity工程中调用Java代码 四、常见的问题与解决方法  一、介绍目的：记录Unity使用Java源文件作为插件的步骤  二、创建java代码1.在Unity工程任意位置创建文件CpuLoading.java,注意避开特殊用途的位置，例如：Assets/Plugins/Android；其内容如">
+<meta name="keywords" content="Unity,Java,插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unity使用Java源文件插件的方法和注意事项">
+<meta property="og:url" content="http://yoursite.com/2019/02/14/Unity使用Java源文件插件的方法/index.html">
 <meta property="og:site_name" content="youlingke的博客">
+<meta property="og:description" content="Unity使用Java源文件插件的方法和注意事项##阅读目录  一、介绍 二、创建java代码 三、在Unity工程中调用Java代码 四、常见的问题与解决方法  一、介绍目的：记录Unity使用Java源文件作为插件的步骤  二、创建java代码1.在Unity工程任意位置创建文件CpuLoading.java,注意避开特殊用途的位置，例如：Assets/Plugins/Android；其内容如">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-17T17:19:18.993Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="youlingke的博客">
+<meta name="twitter:title" content="Unity使用Java源文件插件的方法和注意事项">
+<meta name="twitter:description" content="Unity使用Java源文件插件的方法和注意事项##阅读目录  一、介绍 二、创建java代码 三、在Unity工程中调用Java代码 四、常见的问题与解决方法  一、介绍目的：记录Unity使用Java源文件作为插件的步骤  二、创建java代码1.在Unity工程任意位置创建文件CpuLoading.java,注意避开特殊用途的位置，例如：Assets/Plugins/Android；其内容如">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/14/Unity使用Java源文件插件的方法/">
 
 
 
 
 
-  <title>youlingke的博客</title>
+  <title>Unity使用Java源文件插件的方法和注意事项 | youlingke的博客</title>
   
 
 
@@ -160,9 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -277,138 +280,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/22/VS2017提示请重新输入您的凭据的解决方法/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="youlingke">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="youlingke的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/22/VS2017提示请重新输入您的凭据的解决方法/" itemprop="url">VS2017提示请重新输入您的凭据的解决方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-22T23:13:36+08:00">
-                2019-03-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="VS2017提示请重新输入您的凭据的解决方法"><a href="#VS2017提示请重新输入您的凭据的解决方法" class="headerlink" title="VS2017提示请重新输入您的凭据的解决方法"></a>VS2017提示请重新输入您的凭据的解决方法</h1><h2 id="阅读目录"><a href="#阅读目录" class="headerlink" title="阅读目录"></a>阅读目录</h2><ul>
-<li>一、问题的现象</li>
-<li>二、问题的解决方法</li>
-</ul>
-<h3 id="一、问题的现象"><a href="#一、问题的现象" class="headerlink" title="一、问题的现象"></a>一、问题的现象</h3><ol>
-<li>在VS2017中输入密码并登录后，重复弹出密码输入页面</li>
-<li>在VS2017中登录成功后提示“出现了错误，我们不再能够检索您的帐户信息。请重新输入您的凭据”</li>
-</ol>
-<h3 id="二、问题的解决方法"><a href="#二、问题的解决方法" class="headerlink" title="二、问题的解决方法"></a>二、问题的解决方法</h3><p>现象一：<br>打开VS2017之后，趁着登录提示对话框还没弹出来（这中间大概了3~4秒钟的间隔），赶紧点击“帮助”-“发送反馈”-“报告问题”。<br><img src="/2019/03/22/VS2017提示请重新输入您的凭据的解决方法/20180120132333811.jpg" title="VS发送反馈"><br>在弹出的对话框中，点击右侧的登录按钮<br><img src="/2019/03/22/VS2017提示请重新输入您的凭据的解决方法/20180120132513420.jpg" title="VS反馈页面进行登录"><br>参考博客：<a href="https://blog.csdn.net/zhouyingge1104/article/details/79113636" target="_blank" rel="noopener">皮蛋豆腐1</a></p>
-<p>现象二：<br>关闭VS2017并打开Windows菜单，在“所有程序”列表中以管理员方式启动：VS 2017的开发人员命令提示符(Developer Command Prompt for VS 2017),在command中输入命令“devenv /resetuserdata”来清空历史访问数据。<br><img src="/2019/03/22/VS2017提示请重新输入您的凭据的解决方法/command_img.png" title="清空历史访问数据"><br>参考论坛：<a href="https://social.msdn.microsoft.com/Forums/zh-CN/aa6bffca-4b44-4fb4-9061-804516a206c9/26080278613033124405vs2017653062098629616201023816935823652922510?forum=vstudiozhchs" target="_blank" rel="noopener">无法登录VS2017：出现了错误，我们不再能够检索您的帐户信息。请重新输入您的凭据</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -438,9 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/14/Unity使用Java源文件插件的方法/" itemprop="url">Unity使用Java源文件插件的方法和注意事项</a></h1>
+          <h1 class="post-title" itemprop="name headline">Unity使用Java源文件插件的方法和注意事项</h1>
         
 
         <div class="post-meta">
@@ -490,9 +362,7 @@
       
 
       
-        
-          
-            <h1 id="Unity使用Java源文件插件的方法和注意事项"><a href="#Unity使用Java源文件插件的方法和注意事项" class="headerlink" title="Unity使用Java源文件插件的方法和注意事项"></a>Unity使用Java源文件插件的方法和注意事项</h1><p>##阅读目录</p>
+        <h1 id="Unity使用Java源文件插件的方法和注意事项"><a href="#Unity使用Java源文件插件的方法和注意事项" class="headerlink" title="Unity使用Java源文件插件的方法和注意事项"></a>Unity使用Java源文件插件的方法和注意事项</h1><p>##阅读目录</p>
 <ul>
 <li>一、介绍</li>
 <li>二、创建java代码</li>
@@ -560,8 +430,6 @@ public class CallJavaSource : MonoBehaviour {
 }
 </code></pre><p>‘’’</p>
 
-          
-        
       
     </div>
     
@@ -576,14 +444,40 @@ public class CallJavaSource : MonoBehaviour {
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Unity/" rel="tag"># Unity</a>
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/插件/" rel="tag"># 插件</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/22/VS2017提示请重新输入您的凭据的解决方法/" rel="prev" title="VS2017提示请重新输入您的凭据的解决方法">
+                VS2017提示请重新输入您的凭据的解决方法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -593,10 +487,11 @@ public class CallJavaSource : MonoBehaviour {
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -604,6 +499,10 @@ public class CallJavaSource : MonoBehaviour {
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -624,8 +523,17 @@ public class CallJavaSource : MonoBehaviour {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="youlingke">
           <p class="site-author-name" itemprop="name">youlingke</p>
@@ -676,6 +584,22 @@ public class CallJavaSource : MonoBehaviour {
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unity使用Java源文件插件的方法和注意事项"><span class="nav-number">1.</span> <span class="nav-text">Unity使用Java源文件插件的方法和注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、介绍"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、创建java代码"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、创建java代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、在Unity工程中调用Java代码"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、在Unity工程中调用Java代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -796,10 +720,10 @@ public class CallJavaSource : MonoBehaviour {
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
